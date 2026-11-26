@@ -1,0 +1,245 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: white;
+}
+
+/* Navigation */
+header {
+    background: #05131e;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00abf0;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00abf0;
+}
+
+/* Home Section */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.home-content h3 {
+    font-size: 25px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: #00abf0;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background: #00abf0;
+    color: #081b29;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Common Sections */
+section {
+    padding: 70px 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.heading span {
+    color: #00abf0;
+}
+
+/* About Section */
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.education {
+    margin: 35px auto 0;
+    max-width: 600px;
+    padding: 25px;
+    background: #102b3d;
+    border-radius: 15px;
+    line-height: 2;
+}
+
+.education h3 {
+    color: #00abf0;
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-box {
+    background: #102b3d;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 1px solid #00abf0;
+    text-align: center;
+}
+
+.skill-box:hover {
+    background: #00abf0;
+    color: #081b29;
+}
+
+.subheading {
+    text-align: center;
+    margin: 40px 0 25px;
+    font-size: 25px;
+}
+
+/* Hobbies Section */
+.hobby-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.hobby-box {
+    background: #102b3d;
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.hobby-box h3 {
+    color: #00abf0;
+    margin-bottom: 12px;
+}
+
+/* Projects Section */
+.project-box {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    background: #102b3d;
+    border-radius: 15px;
+    line-height: 1.8;
+}
+
+.project-box h3 {
+    color: #00abf0;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-content {
+    text-align: center;
+    line-height: 2.5;
+    font-size: 17px;
+}
+
+.contact-content a {
+    color: #00abf0;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #05131e;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .home-content h2 {
+        font-size: 21px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
